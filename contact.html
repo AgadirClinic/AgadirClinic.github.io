@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-lang="contact-title">Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header><!-- COPY --></header>
+
+  <section class="page">
+    <div class="container">
+      <h2 data-lang="contact-title">Contact Us</h2>
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" data-lang-placeholder="name" required />
+        <input type="email" name="email" placeholder="Your Email" data-lang-placeholder="email" required />
+        <input type="tel" name="phone" placeholder="Phone" data-lang-placeholder="phone" />
+        <textarea name="message" placeholder="Your Message" data-lang-placeholder="message" required></textarea>
+        <button type="submit" class="btn" data-lang="send">Send</button>
+      </form>
+      <p class="success" style="display:none;" data-lang="thanks">Thank you!</p>
+    </div>
+  </section>
+
+  <footer><!-- COPY --></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
