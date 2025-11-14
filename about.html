@@ -7,22 +7,47 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header><!-- COPY FROM index.html --></header>
-
-  <section class="page">
+  <header>
     <div class="container">
+      <h1 data-lang="main-title">Soins Agadir Center</h1>
+      <nav>
+        <a href="index.html" data-lang="home">Home</a>
+        <a href="about.html" data-lang="about">About</a>
+        <a href="services.html" data-lang="services">Services</a>
+        <a href="contact.html" data-lang="contact">Contact</a>
+        <div class="lang-switch">
+          <button onclick="setLang('en')">EN</button>
+          <button onclick="setLang('fr')">FR</button>
+          <button onclick="setLang('ar')">العربية</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
       <h2 data-lang="about-title">About Us</h2>
-      <img src="assets/img/staff.jpg" alt="Team" class="about-img">
-      <p data-lang="about-desc">Soins Agadir Center is a dedicated nursing and wellness center in Agadir...</p>
+      <p data-lang="about-desc">Soins Agadir Center is a dedicated nursing and wellness center in Agadir with over 10 years of experience. We provide personalized care backed by professional expertise.</p>
+      <img src="assets/img/staff.jpg" alt="Our Team" class="section-img">
       <ul>
         <li data-lang="certified">Certified Nurses</li>
         <li data-lang="specialties">Specialties: Home Care, Aesthetics</li>
         <li data-lang="community">Committed to Community Health</li>
       </ul>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <footer><!-- COPY FROM index.html --></footer>
+  <footer>
+    <div class="container">
+      <h3 data-lang="follow">Follow Us</h3>
+      <a href="https://www.instagram.com/soins.agadir.center" target="_blank" data-lang="instagram">Instagram</a>
+      <hr>
+      <h3 data-lang="schedule">Schedule an Appointment</h3>
+      <p data-lang="schedule-desc">We can help you book or search our services.</p>
+      <a href="contact.html" class="btn" data-lang="book">Book Now</a>
+    </div>
+  </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

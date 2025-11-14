@@ -3,27 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-lang="contact-title">Contact</title>
+  <title data-lang="contact-title">Contact - Soins Agadir Center</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header><!-- COPY --></header>
-
-  <section class="page">
+  <header>
     <div class="container">
+      <h1 data-lang="main-title">Soins Agadir Center</h1>
+      <nav>
+        <a href="index.html" data-lang="home">Home</a>
+        <a href="about.html" data-lang="about">About</a>
+        <a href="services.html" data-lang="services">Services</a>
+        <a href="contact.html" data-lang="contact">Contact</a>
+        <div class="lang-switch">
+          <button onclick="setLang('en')">EN</button>
+          <button onclick="setLang('fr')">FR</button>
+          <button onclick="setLang('ar')">العربية</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="contact">
       <h2 data-lang="contact-title">Contact Us</h2>
-      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <input type="text" name="name" placeholder="Your Name" data-lang-placeholder="name" required />
         <input type="email" name="email" placeholder="Your Email" data-lang-placeholder="email" required />
-        <input type="tel" name="phone" placeholder="Phone" data-lang-placeholder="phone" />
+        <input type="tel" name="phone" placeholder="Phone (optional)" data-lang-placeholder="phone" />
         <textarea name="message" placeholder="Your Message" data-lang-placeholder="message" required></textarea>
-        <button type="submit" class="btn" data-lang="send">Send</button>
+        <button type="submit" class="btn" data-lang="send">Send Message</button>
       </form>
-      <p class="success" style="display:none;" data-lang="thanks">Thank you!</p>
-    </div>
-  </section>
+      <p class="success" style="display:none; margin-top:1rem; color:green;" data-lang="thanks">Thank you! We'll reply soon.</p>
+    </section>
+  </main>
 
-  <footer><!-- COPY --></footer>
+  <footer>
+    <div class="container">
+      <h3 data-lang="follow">Follow Us</h3>
+      <a href="https://www.instagram.com/soins.agadir.center" target="_blank" data-lang="instagram">Instagram</a>
+      <hr>
+      <h3 data-lang="schedule">Schedule an Appointment</h3>
+      <p data-lang="schedule-desc">We can help you book or search our services.</p>
+      <a href="contact.html" class="btn" data-lang="book">Book Now</a>
+    </div>
+  </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
